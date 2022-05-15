@@ -3,7 +3,7 @@
     <v-app-bar color="deep-purple" dark>
       <v-app-bar-nav-icon @click="drawer = true"></v-app-bar-nav-icon>
 
-      <v-toolbar-title>Camping</v-toolbar-title>
+      <v-toolbar-title>Rent Campsite</v-toolbar-title>
     </v-app-bar>
     <v-navigation-drawer v-model="drawer" absolute temporary>
       <v-list nav dense>
@@ -49,9 +49,7 @@
                       <v-col cols="12" sm="6" md="4">
                         <v-text-field v-model="editedItem.name" label="Name"></v-text-field>
                       </v-col>
-                      <v-col cols="12" sm="6" md="4">
-                        <v-text-field v-model="editedItem.size" label="Ukuran"></v-text-field>
-                      </v-col>
+                      <v-col cols="12" sm="6" md="4"> </v-col>
                       <v-col cols="12" sm="6" md="4">
                         <v-text-field v-model="editedItem.price" label="Harga"></v-text-field>
                       </v-col>
@@ -109,7 +107,6 @@ export default {
         sortable: false,
         value: 'name',
       },
-      { text: 'Ukuran (cm)', value: 'size' },
       { text: 'Harga (Rp)', value: 'price' },
       { text: 'Jumlah', value: 'Jumlah' },
       { text: 'Actions', value: 'actions', sortable: false },
@@ -118,13 +115,12 @@ export default {
     editedIndex: -1,
     editedItem: {
       Name: '',
-      size: 0,
+      size: '',
       price: 0,
       jumlah: 0,
     },
     defaultItem: {
       Name: '',
-      size: 0,
       price: 0,
       jumlah: 0,
     },
@@ -150,25 +146,21 @@ export default {
       this.nama = [
         {
           name: 'korek pistol',
-          size: 1.0,
           price: 1000000,
           Jumlah: 20,
         },
         {
           name: 'payung',
-          size: 1.0,
           price: 1000000,
           Jumlah: 20,
         },
         {
           name: 'kompor',
-          size: 1.0,
           price: 1000000,
           Jumlah: 20,
         },
         {
           name: 'senter',
-          size: 1.0,
           price: 1000000,
           Jumlah: 20,
         },
