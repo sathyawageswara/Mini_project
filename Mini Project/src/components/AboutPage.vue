@@ -4,16 +4,13 @@
       <v-app-bar-nav-icon @click="drawer = true"></v-app-bar-nav-icon>
 
       <v-toolbar-title>Camping</v-toolbar-title>
-      <v-spacer></v-spacer>
-      <v-btn text rounded router-link to="/Login">Login</v-btn>
-      <v-btn text rounded router-link to="/About">About</v-btn>
     </v-app-bar>
     <v-navigation-drawer v-model="drawer" absolute temporary>
       <v-list nav dense>
         <v-list-item-group v-model="group" active-class="deep-purple--text text--accent-4">
           <v-list-item>
             <v-list-item-icon> <v-icon>mdi-home</v-icon> </v-list-item-icon>
-            <v-btn router-link="/">Home</v-btn>
+            <v-btn router-link to="/">home</v-btn>
           </v-list-item>
           <v-list-item>
             <v-list-item-icon>
