@@ -1,4 +1,4 @@
-# praktikum
+# Mini_Project
 
 ## Project setup
 ```
