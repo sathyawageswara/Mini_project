@@ -3,7 +3,7 @@
     <v-app-bar color="deep-purple" dark>
       <v-app-bar-nav-icon @click="drawer = true"></v-app-bar-nav-icon>
 
-      <v-toolbar-title>Camping</v-toolbar-title>
+      <v-toolbar-title>Rent Campsite</v-toolbar-title>
     </v-app-bar>
     <v-navigation-drawer v-model="drawer" absolute temporary>
       <v-list nav dense>
@@ -124,7 +124,7 @@ export default {
     },
     defaultItem: {
       Name: '',
-      size: 0,
+      size: '',
       price: 0,
       jumlah: 0,
     },
@@ -150,25 +150,25 @@ export default {
       this.nama = [
         {
           name: 'Tenda dome',
-          size: 1.0,
+          size: '120 x 240 x 360',
           price: 1000000,
           Jumlah: 20,
         },
         {
-          name: 'Tenda dome',
-          size: 1.0,
+          name: 'Tenda istana',
+          size: '120 x 240 x 360',
           price: 1000000,
           Jumlah: 20,
         },
         {
-          name: 'Tenda dome',
-          size: 1,
+          name: 'Tenda kecil',
+          size: '120 x 240 x 360',
           price: 1000000,
           Jumlah: 20,
         },
         {
-          name: 'Tenda dome',
-          size: 1.0,
+          name: 'Tenda xl',
+          size: '120 x 240 x 360',
           price: 1000000,
           Jumlah: 20,
         },
